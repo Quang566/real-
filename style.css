@@ -58,7 +58,9 @@ p {
     position: relative;
     z-index: 1;
 }
-
+.btn:active {
+    transform: scale(1.2);
+}
 .btn:hover {
     background: #d81b60;
     box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);

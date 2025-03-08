@@ -12,13 +12,20 @@ body {
 }
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 80%;
     max-width: 1200px;
+    position: relative;
 }
 .picture-wrapper {
-    text-align: left;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
 }
 
 .center-picture {
@@ -32,7 +39,8 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     padding: 30px 20px;
     width: 60%;
-    margin-left: 20px;
+    margin-top: 150px;
+    position: relative;
 }
 
 h1 {
